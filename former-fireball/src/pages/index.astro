@@ -1,0 +1,166 @@
+---
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Home">
+  <main>
+    <section id="Opener">
+      <div class="container lg:flex-row items-stretch">
+        <div id="opening-image " class="border-primary border-1 p-20 h-200">
+          <!-- a logo or something would be here -->
+          <h2>Because Safe Driving is NO Accident!</h2>
+          <p>
+            We teach our students safe, responsible driving techniques and
+            practices.
+          </p>
+          <a href="/">Request an appointment</a>
+        </div>
+        <div id="Opening-Text" class="content-container lg:self-center">
+          <span class="text-primary">About us in short</span>
+          <h1>Ready For A Safe, Fun Driving Experience?</h1>
+          <hr />
+
+          <p>
+            The school offers the following services for teenage first-time
+            drivers, new adult learners and existing drivers with lapsed
+            licenses.
+          </p>
+          <div id="Opener-Qualities">
+            <ul class="text-left mb-8 px-0 mx-0">
+              <li class="tick-mark">Basic driving skills</li>
+              <li class="tick-mark">Highway and city driving</li>
+              <li class="tick-mark">Parallel parking</li>
+            </ul>
+
+            <ul class="text-left">
+              <li class="tick-mark">Expressway/Beltway Driving</li>
+              <li class="tick-mark">Road test preparation</li>
+              <li class="tick-mark">Road test vehicle usage</li>
+            </ul>
+          </div>
+          <button class="self-start">View more</button>
+        </div>
+      </div>
+      <!-- Text over a darker image -->
+    </section>
+
+    <section id="Our-Team-Preview" class="bg-dark">
+      <div class="container">
+        <div id="Our-Team-Text" class="content-container">
+          <span>Meet our team</span>
+          <h2>Our instructors</h2>
+        </div>
+        <div id="Our-Team-Image-Gallery" class="content-container row-content">
+          <div id="personOne" class="overflow-hidden h-full">
+            <!-- image of person -->
+            <div class="border-2 border-primary">
+              <img
+                src="https://thumbs.dreamstime.com/b/happy-man-thumbs-up-sign-full-length-portrait-white-backgroun-giving-smiling-31054055.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- box with name and text  -->
+            <div
+              class="content-container items-center bg-white text-black justify-center gap-2 py-8"
+            >
+              <h3 class="font-bold">Anthony Adam</h3>
+              <p>Driving Instructor</p>
+            </div>
+          </div>
+          <div class="overflow-hidden max-h-full">
+            <!-- image of person -->
+            <div class="border-2 border-primary">
+              <img
+                src="https://thumbs.dreamstime.com/b/happy-man-thumbs-up-sign-full-length-portrait-white-backgroun-giving-smiling-31054055.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- box with name and text  -->
+            <div
+              class="content-container items-center bg-white text-black justify-center gap-2 py-8"
+            >
+              <h3 class="font-bold">Anthony Adam</h3>
+              <p>Driving Instructor</p>
+            </div>
+          </div>
+          <div class="overflow-hidden h-full">
+            <!-- image of person -->
+            <div class="border-2 border-primary">
+              <img
+                class="aspect-[1/1] object-cover w-full"
+                src="https://thumbs.dreamstime.com/b/beautiful-happy-smiling-girl-outdoors-woman-smiling-joyful-fri-friendly-charming-looking-camera-soft-sunny-colors-49077920.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- box with name and text  -->
+            <div
+              class="content-container items-center bg-white text-black justify-center gap-2 py-8"
+            >
+              <h3 class="font-bold">Anthony Adam</h3>
+              <p>Driving Instructor</p>
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <!-- image of person -->
+            <div class="border-2 border-primary">
+              <img
+                src="https://thumbs.dreamstime.com/b/happy-man-thumbs-up-sign-full-length-portrait-white-backgroun-giving-smiling-31054055.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- box with name and text  -->
+            <div
+              class="content-container items-center bg-white text-black justify-center gap-2 py-8"
+            >
+              <h3 class="font-bold">Anthony Adam</h3>
+              <p>Driving Instructor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Certification">
+      <div class="container">
+        <div id="Certification-Text" class="content-container">
+          <span>We are certified</span>
+          <h2>Our certificates</h2>
+          <p>Some very short text</p>
+        </div>
+
+        <hr />
+
+        <div id="Certification-Images" class="content-container row-content">
+          <!-- Images within div  -->
+          <div class="border-primary border-solid">
+            <img
+              src="https://i0.wp.com/www.maltaway.com/wp-content/uploads/2019/03/certified-idiot.jpg?fit=700%2C460&ssl=1"
+              alt=""
+            />
+          </div>
+          <div class="border-primary border-solid">
+            <img
+              src="https://i0.wp.com/www.maltaway.com/wp-content/uploads/2019/03/certified-idiot.jpg?fit=700%2C460&ssl=1"
+              alt=""
+            />
+          </div>
+          <div class="border-primary border-solid">
+            <img
+              src="https://i0.wp.com/www.maltaway.com/wp-content/uploads/2019/03/certified-idiot.jpg?fit=700%2C460&ssl=1"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

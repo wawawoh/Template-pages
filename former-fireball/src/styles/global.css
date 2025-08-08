@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+
+    section {
+        padding: clamp(3.75rem, 8vw, 6.25rem) 1rem;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap :clamp(3rem, 6vw, 4rem);
+    }
+    .container {
+        width: 100%;
+        margin: auto;
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap :clamp(3rem, 6vw, 4rem);
+       
+       
+    }
+    .content-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap :clamp(1.5rem, 4vw, 2rem)
+    }
+    .row-content {
+        @apply lg:flex-row lg:items-stretch
+    }
+    /* fill this is with the primary color */
+    hr {
+        background-color: #1A1921;
+        height: 2px;
+        width: 100%;
+    }
+    .tick-mark {
+        @apply before:content-['✓'] before:mr-2
+    }
+    span {
+        @apply -mb-8 text-primary uppercase font-bold
+    }
+    h1 {
+        @apply text-4xl
+    }
+    h2 {
+        @apply text-3xl
+    }
+    h3 {
+        @apply text-2xl
+    }
+    
+
+}
+@theme {
+    
+       
+    --color-primary: oklch(0.72 0.11 178);
+    --color-dark: #1A1921;
+
+
+    
+}
