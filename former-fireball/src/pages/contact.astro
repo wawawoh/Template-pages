@@ -1,120 +1,136 @@
 ---
 import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <!-- HEADER -->
-<main class="h-[100vh]">
-  <section class="text-3xl">
-    <div class="container lg:flex-row">
-      <!-- CONTACT DETIALS -->
-      <div
-        id="contact-details"
-        class="flex flex-col gap-16 self-stretch w-full h-full lg:max-w-[30%]"
-      >
-        <!-- LOCATION -->
-        <div class="flex items-center gap-4 w-full">
-          <!-- Icon with background -->
-          <div class="icon-contact">
-            <img class="object-contain" src="/images/pin.svg" alt="Map icon" />
-          </div>
+<Layout title="Contact Page">
+  <main>
+    <section class="">
+      <div class="container lg:flex-row">
+        <!-- CONTACT DETIALS -->
+        <div
+          id="contact-details"
+          class="grid grid-rows-3 gap-16 self-stretch w-full h-full lg:max-w-[30%]"
+        >
+          <!-- LOCATION -->
+          <div class="flex items-center gap-4 w-full">
+            <!-- Icon with background -->
+            <div class="icon-contact">
+              <img
+                class="object-contain"
+                src="/images/pin.svg"
+                alt="Map icon"
+              />
+            </div>
 
-          <!-- Text -->
-          <div class="inner-details">
-            <h3 class="text-primary font-semibold">Our Location</h3>
-            <p>500 South Capitol Avenue, Indianapolis, IN 46225</p>
+            <!-- Text -->
+            <div class="inner-details">
+              <h3 class="text-primary font-semibold">Our Location</h3>
+              <p>500 South Capitol Avenue, Indianapolis, IN 46225</p>
+            </div>
           </div>
-        </div>
-        <!-- CALL / ONLINE CONNECT -->
-        <div class="flex items-center gap-4">
-          <!-- Icon with background -->
-          <div class="icon-contact">
-            <img class="object-contain" src="/images/pin.svg" alt="Map icon" />
-          </div>
+          <!-- CALL / ONLINE CONNECT -->
+          <div class="flex items-center gap-4">
+            <!-- Icon with background -->
+            <div class="icon-contact">
+              <img
+                class="object-contain"
+                src="/images/pin.svg"
+                alt="Map icon"
+              />
+            </div>
 
-          <!-- Text -->
-          <div class="inner-details">
-            <h3 class="text-primary font-semibold">
-              Call us or connect Online
-            </h3>
-            <p>
-              Email <a href="mailto:ExampleEmail@email.com"
-                >ExampleEmail@email.com</a
-              >
-            </p>
-            <p>Telehone: <a href="tel:+44733378901">0733378901</a></p>
+            <!-- Text -->
+            <div class="inner-details">
+              <h3 class="text-primary font-semibold">
+                Call us or connect Online
+              </h3>
+              <p>
+                Email <a href="mailto:ExampleEmail@email.com"
+                  >ExampleEmail@email.com</a
+                >
+              </p>
+              <p>Telehone: <a href="tel:+44733378901">0733378901</a></p>
+            </div>
           </div>
-        </div>
-        <!-- OPENING HOURS -->
-        <div class="flex items-center gap-4">
-          <!-- Icon with background -->
-          <div class="icon-contact">
-            <img class="object-contain" src="/images/pin.svg" alt="Map icon" />
-          </div>
+          <!-- OPENING HOURS -->
+          <div class="flex items-center gap-4">
+            <!-- Icon with background -->
+            <div class="icon-contact">
+              <img
+                class="object-contain"
+                src="/images/pin.svg"
+                alt="Map icon"
+              />
+            </div>
 
-          <!-- Text -->
-          <div class="inner-details">
-            <h3 class="text-primary font-semibold">Our Opening Hours</h3>
-            <div id="grid" class="grid grid-cols-2 gap-1">
-              <div>Mon-Fri:</div>
-              <div>9am-6pm</div>
-              <div>Saturday:</div>
-              <div>10am- 4pm</div>
-              <div>Sunday</div>
-              <div>Closed</div>
+            <!-- Text -->
+            <div class="inner-details max-w-max">
+              <h3 class="text-primary font-semibold">Our Opening Hours</h3>
+              <div id="grid" class="grid grid-cols-2 gap-1">
+                <div>Mon-Fri:</div>
+                <div>9am-6pm</div>
+                <div>Saturday:</div>
+                <div>10am- 4pm</div>
+                <div>Sunday</div>
+                <div>Closed</div>
+              </div>
             </div>
           </div>
         </div>
+        <!-- CONTACT FORM -->
+        <div id="form" class="lg:flex-grow">
+          <form action="" class="w-full h-full flex flex-col gap-4">
+            <div class="form-wrapper">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                class="inner-form"
+              />
+            </div>
+
+            <div class="form-wrapper">
+              <label for="Telephone">Phone number</label>
+              <input
+                type="text"
+                id="Telephone"
+                name="Telephone"
+                placeholder="Enter your phone number"
+                class="inner-form"
+              />
+            </div>
+
+            <div class="form-wrapper">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                class="inner-form"
+              />
+            </div>
+
+            <div class="form-wrapper">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                class="inner-form"
+                placeholder="Enter your message"></textarea>
+            </div>
+          </form>
+        </div>
       </div>
-      <!-- CONTACT FORM -->
-      <div id="form" class="lg:flex-grow">
-        <form action="" class="w-full h-full flex flex-col gap-4">
-          <div class="form-wrapper">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter your name"
-              class="inner-form"
-            />
-          </div>
+    </section>
+  </main>
 
-          <div class="form-wrapper">
-            <label for="Telephone">Phone number</label>
-            <input
-              type="text"
-              id="Telephone"
-              name="Telephone"
-              placeholder="Enter your phone number"
-              class="inner-form"
-            />
-          </div>
+  <!-- FOOTER -->
 
-          <div class="form-wrapper">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
-              class="inner-form"
-            />
-          </div>
-
-          <div class="form-wrapper">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              class="inner-form"
-              placeholder="Enter your message"></textarea>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-</main>
-<!-- FOOTER -->
-
-<!-- /THIS IS SOOO ANOYING FUCJ YOU -->
+  <!-- /THIS IS SOOO ANOYING FUCJ YOU -->
+</Layout>
