@@ -5,9 +5,24 @@ import "../styles/global.css";
 <!-- HEADER -->
 <main>
   <section>
-    <div class="container">
-      <div id="contact-details">
-        <div class="details-box flex items-center gap-4">
+    <div class="container text-6x1">
+      <!-- CONTACT DETIALS -->
+      <div id="contact-details" class="flex flex-col gap-2 self-stretch">
+        <!-- LOCATION -->
+        <div class="flex items-center gap-4 w-full">
+          <!-- Icon with background -->
+          <div class="bg-primary flex items-center justify-center rounded p-20">
+            <img class="object-contain" src="/images/pin.svg" alt="Map icon" />
+          </div>
+
+          <!-- Text -->
+          <div class="inner-details">
+            <h3 class="text-primary font-semibold">Our Location</h3>
+            <p>500 South Capitol Avenue, Indianapolis, IN 46225</p>
+          </div>
+        </div>
+        <!-- CALL / ONLINE CONNECT -->
+        <div class="flex items-center gap-4">
           <!-- Icon with background -->
           <div
             class="w-16 h-16 bg-primary flex items-center justify-center rounded"
@@ -21,11 +36,45 @@ import "../styles/global.css";
 
           <!-- Text -->
           <div class="inner-details">
-            <h3 class="text-primary font-semibold">Our Location</h3>
-            <p>500 South Capitol Avenue, Indianapolis, IN 46225</p>
+            <h3 class="text-primary font-semibold">
+              Call us or connect Online
+            </h3>
+            <p>
+              Email <a href="mailto:ExampleEmail@email.com"
+                >ExampleEmail@email.com</a
+              >
+            </p>
+            <p>Telehone: <a href="tel:+44733378901">0733378901</a></p>
+          </div>
+        </div>
+        <!-- OPENING HOURS -->
+        <div class="flex items-center gap-4">
+          <!-- Icon with background -->
+          <div
+            class="w-16 h-16 bg-primary flex items-center justify-center rounded"
+          >
+            <img
+              class="w-8 h-8 object-contain"
+              src="/images/pin.svg"
+              alt="Map icon"
+            />
+          </div>
+
+          <!-- Text -->
+          <div class="inner-details">
+            <h3 class="text-primary font-semibold">Our Opening Hours</h3>
+            <div id="grid" class="grid grid-cols-2 gap-1">
+              <div>Mon-Fri:</div>
+              <div>9am-6pm</div>
+              <div>Saturday:</div>
+              <div>10am- 4pm</div>
+              <div>Sunday</div>
+              <div>Closed</div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- CONTACT FORM -->
       <div id="form"></div>
     </div>
   </section>
