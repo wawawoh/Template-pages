@@ -3,15 +3,18 @@ import "../styles/global.css";
 ---
 
 <!-- HEADER -->
-<main>
-  <section>
-    <div class="container text-6x1">
+<main class="h-[100vh]">
+  <section class="text-3xl">
+    <div class="container lg:flex-row">
       <!-- CONTACT DETIALS -->
-      <div id="contact-details" class="flex flex-col gap-2 self-stretch">
+      <div
+        id="contact-details"
+        class="flex flex-col gap-16 self-stretch w-full h-full lg:max-w-[30%]"
+      >
         <!-- LOCATION -->
         <div class="flex items-center gap-4 w-full">
           <!-- Icon with background -->
-          <div class="bg-primary flex items-center justify-center rounded p-20">
+          <div class="icon-contact">
             <img class="object-contain" src="/images/pin.svg" alt="Map icon" />
           </div>
 
@@ -24,14 +27,8 @@ import "../styles/global.css";
         <!-- CALL / ONLINE CONNECT -->
         <div class="flex items-center gap-4">
           <!-- Icon with background -->
-          <div
-            class="w-16 h-16 bg-primary flex items-center justify-center rounded"
-          >
-            <img
-              class="w-8 h-8 object-contain"
-              src="/images/pin.svg"
-              alt="Map icon"
-            />
+          <div class="icon-contact">
+            <img class="object-contain" src="/images/pin.svg" alt="Map icon" />
           </div>
 
           <!-- Text -->
@@ -50,14 +47,8 @@ import "../styles/global.css";
         <!-- OPENING HOURS -->
         <div class="flex items-center gap-4">
           <!-- Icon with background -->
-          <div
-            class="w-16 h-16 bg-primary flex items-center justify-center rounded"
-          >
-            <img
-              class="w-8 h-8 object-contain"
-              src="/images/pin.svg"
-              alt="Map icon"
-            />
+          <div class="icon-contact">
+            <img class="object-contain" src="/images/pin.svg" alt="Map icon" />
           </div>
 
           <!-- Text -->
@@ -75,7 +66,52 @@ import "../styles/global.css";
         </div>
       </div>
       <!-- CONTACT FORM -->
-      <div id="form"></div>
+      <div id="form" class="lg:flex-grow">
+        <form action="" class="w-full h-full flex flex-col gap-4">
+          <div class="form-wrapper">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              class="inner-form"
+            />
+          </div>
+
+          <div class="form-wrapper">
+            <label for="Telephone">Phone number</label>
+            <input
+              type="text"
+              id="Telephone"
+              name="Telephone"
+              placeholder="Enter your phone number"
+              class="inner-form"
+            />
+          </div>
+
+          <div class="form-wrapper">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              class="inner-form"
+            />
+          </div>
+
+          <div class="form-wrapper">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              class="inner-form"
+              placeholder="Enter your message"></textarea>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
 </main>
